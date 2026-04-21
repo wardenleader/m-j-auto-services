@@ -1,0 +1,133 @@
+{
+  "project_info": {
+    "name": "M & J Auto Services",
+    "business_type": "Auto Repair Shop",
+    "address": "1037 S Claremont St, San Mateo, CA 94402",
+    "phone": "(650) 834-6690",
+    "rating": "5.0 stars on Google (7 reviews)",
+    "hours": {
+      "Mon-Fri": "8AM-6PM",
+      "Sat": "8AM-12PM",
+      "Sun": "Closed"
+    }
+  },
+  "design_system": {
+    "theme": "light",
+    "archetype": "1 (Organic & Earthy - Auto Variant)",
+    "colors": {
+      "primary": "#3E2723",
+      "secondary": "#795548",
+      "background": "#FAF7F2",
+      "card": "#FFFFFF",
+      "accent": "#B87333",
+      "text_primary": "#3E2723",
+      "text_secondary": "#795548",
+      "border": "rgba(121, 85, 72, 0.2)",
+      "star_rating": "#F59E0B"
+    },
+    "typography": {
+      "headings": {
+        "family": "Montserrat",
+        "weight": "800",
+        "tracking": "tracking-tight"
+      },
+      "body": {
+        "family": "Open Sans",
+        "weight": "400",
+        "tracking": "tracking-normal"
+      },
+      "buttons": {
+        "family": "Montserrat",
+        "weight": "600",
+        "tracking": "tracking-wide"
+      }
+    },
+    "layout_and_spacing": {
+      "philosophy": "Generous spacing (p-8, p-12), modern asymmetric grids",
+      "container_max_width": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "border_radius": "rounded-xl",
+      "card_shadow": "shadow-lg shadow-[#3E2723]/5"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "instructions": "Use lucide-react for all icons (Wrench, Star, MapPin, Phone, Clock, ChevronRight, CheckCircle)."
+    }
+  },
+  "animations": {
+    "library": "framer-motion",
+    "global_instructions": "Ensure `framer-motion` is installed. Disable complex animations via `prefers-reduced-motion`.",
+    "specific_effects": {
+      "loader": "Full screen `#3E2723` background with a spinning bronze wrench icon (`#B87333`) lasting ~1.5s before revealing the site.",
+      "hero_headline": "Animated entrance with subtle parallax effect on scroll.",
+      "scroll_fades": "Smooth scroll fades and slides (upwards) for content blocks (About, Services, Reviews).",
+      "buttons": "Hover lift (`-translate-y-1`) and shadow enhancement.",
+      "service_cards": "Subtle 3D tilt effect on hover or simple scale up (`scale-105`) with border glow.",
+      "stars": "Animated 5.0 star rating pulse/shimmer.",
+      "counters": "Scroll-triggered counters for the '7' Google Reviews and '5.0' Rating."
+    }
+  },
+  "media_urls": {
+    "hero_background": {
+      "url": "https://images.pexels.com/photos/8986039/pexels-photo-8986039.jpeg",
+      "description": "White car with hood open in a professional auto repair shop."
+    },
+    "about_image": {
+      "url": "https://images.unsplash.com/photo-1649769069590-268b0b994462",
+      "description": "Professional mechanic holding wrenches in hands."
+    },
+    "services_detail": {
+      "url": "https://images.pexels.com/photos/15543138/pexels-photo-15543138.jpeg",
+      "description": "Detailed view of a shiny chrome car engine."
+    },
+    "general_mechanic": {
+      "url": "https://images.unsplash.com/photo-1775590766345-c117265f0c1b",
+      "description": "Mechanic using a wrench on a car engine."
+    }
+  },
+  "content_structure": [
+    {
+      "section": "Loader",
+      "details": "Full screen intro. Background `#3E2723`. Center: Spinning Wrench icon (`text-[#B87333]`). Exits gracefully after 1.5s."
+    },
+    {
+      "section": "Header & Nav",
+      "details": "Sticky header with crystal glass effect (`backdrop-blur-xl bg-[#FAF7F2]/80`). Logo text 'M & J Auto Services' in dark brown. Links: About, Services, Reviews, Contact. CTA: 'Get Quote' in bronze."
+    },
+    {
+      "section": "Hero",
+      "details": "Background: `hero_background` image with a rich `bg-[#3E2723]/60` gradient overlay. Foreground: Massive Montserrat headline (e.g. 'Trust Your Vehicle to San Mateo’s Finest'). Animated 5-star badge. Live Open/Closed status badge. CTAs: 'Call Now' (Bronze button) and 'Get Quote' (Outline white button).",
+      "test_ids": ["hero-call-now", "hero-get-quote"]
+    },
+    {
+      "section": "About Us",
+      "details": "Bento-style layout or split 50/50. Left: `about_image` with rounded corners and subtle shadow. Right: Warm, welcoming copy. Emphasize 'Neighborhood mechanic meets premium craftsmanship'. Highlight the 5.0 rating on Google prominently here."
+    },
+    {
+      "section": "Services Grid",
+      "details": "10 specific services: Engine Diagnostics, Oil Changes, AC Service, Brakes, Tires, Transmission, Battery, Check Engine, Tune-Ups, Pre-Purchase Inspection. Use clean white cards (`bg-[#FFFFFF]`), border `#795548/20`, icon for each, hover tilt effect.",
+      "test_ids": ["service-card"]
+    },
+    {
+      "section": "Why Choose Us",
+      "details": "High-impact section. Darker background (`#3E2723`) or rich metallic text over a light background. Features: 5-Star Rating, Honest Pricing, Experienced Techs, Customer-First, Transparent Estimates. Scroll-triggered counter for 7 reviews."
+    },
+    {
+      "section": "Reviews Carousel",
+      "details": "Showcase real-feeling customer reviews. Clean cards with 5 gold stars. Use framer-motion drag or standard flex overflow."
+    },
+    {
+      "section": "Contact & Location",
+      "details": "Split view. Left: Contact form (Name, Email, Phone, Vehicle Make/Model/Year, Service Needed, Message). Right: Details. Clickable phone, Hours table (highlight current day), 'Open Now' badge, 'Get Directions' button. Embedded Google Maps iframe for 1037 S Claremont St, San Mateo, CA 94402.",
+      "test_ids": ["contact-form", "contact-submit"]
+    },
+    {
+      "section": "Footer",
+      "details": "Background `#3E2723`, text `#FAF7F2`. Logo, copyright, short link list, exact address, and hours."
+    }
+  ],
+  "accessibility_and_testing": {
+    "test_ids": "All interactive elements MUST have `data-testid` attributes (e.g., `data-testid='nav-about'`, `data-testid='call-now-button'`).",
+    "contrast": "Ensure text contrast meets APCA/WCAG standards. Do not put `#795548` text on `#3E2723` backgrounds.",
+    "fonts_installation": "Load Montserrat and Open Sans from Google Fonts via next/font or standard HTML link tags."
+  }
+}
